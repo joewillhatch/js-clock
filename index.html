@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+    
+    <style>
+    * {
+background-color: #222;
+}
+
+span {
+background-color: #000;
+margin-left: 25px;
+}
+
+#clock{
+margin: 8% 12%;
+padding: 30px 30px;
+text-align: center;
+color: purple;
+opacity: 0.9;
+font-family: 'PT Mono', monospace;
+font-size: 90px;
+-webkit-text-stroke: 1px pink;
+background-color: #888;
+border-radius: 18px;
+border: 6px solid black;
+background: #000;
+}
+
+  @media (max-width:830px){
+  #clock{
+  margin: 3% 4%;
+  padding: 10px 10px;
+  font-size: 70px;
+  border-radius: 12px;}
+
+  }
+
+  @media (min-width:1230px){
+  #clock{
+  margin: 3% 10%;
+  font-size: 140px;
+  }
+      
+    </style>
+    
+    
+    
+</head>
+
+<body id="clock" onload="setInterval('updateTime()', 1000)">    
+</body>
+
+<script src="clock.js"></script>
+    
+</html>
